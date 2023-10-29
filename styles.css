@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap");
+
+:root {
+  --button-grey: #e8eff2;
+  --orange: #f16718;
+  --black: #162542;
+  --p-gray: #7b8bad;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: "Barlow", sans-serif;
+}
+
+.container {
+  padding: 3.5rem 10%;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-section > a > button {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0px;
+  background: var(--button-grey);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+
+.top-section > a > button:hover {
+  background: var(--black);
+  color: white;
+  cursor: pointer;
+}
+
+.hero-section-img-1 {
+  background: url(./assets/desktop/image-keyboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.hero-section-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25rem;
+  padding: 4.5rem 0;
+  max-width: 100%;
+}
+
+.hero-section-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section-info-text > h1 {
+  color: var(--black);
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+}
+
+.hero-section-info-text > p {
+  padding: 1rem 1rem 2rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+  color: var(--p-gray);
+}
+
+.hero-section-button > button {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0px;
+  background: var(--orange);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+  color: white;
+}
+.hero-section-button > span {
+  color: var(--p-gray);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+}
+
+.hero-section-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+
+.hero-section-button > button:hover {
+  background: #ff9b62;
+  cursor: pointer;
+}
+
+.grey-spot-1 {
+  height: 15rem;
+  width: 5rem;
+  background: var(--button-grey);
+  position: absolute;
+  top: 11.5rem;
+  right: 0;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.grey-spot-2 {
+  height: 15rem;
+  width: 5rem;
+  background: var(--button-grey);
+  position: absolute;
+  top: 51.25rem;
+  left: 0;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.hero-section-bot {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 25rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+.hero-section-img-2 {
+  background: url(./assets/desktop/image-phone-and-keyboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  height: 25rem;
+  width: 100%;
+}
+
+.orange-bg {
+  background: var(--orange);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  height: 25rem;
+  width: 100%;
+  opacity: 50%;
+}
+
+.hero-section-img-3 {
+  background: url(./assets/desktop/image-glass-and-keyboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.hero-section-info-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section-info-2-text {
+  padding-left: 3rem;
+}
+
+.hero-section-info-2-text > h2 {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+}
+
+.hero-section-info-2-text > p {
+  padding: 1rem 1rem 2rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+  color: var(--p-gray);
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  width: 100%;
+  padding-top: 7.5rem;
+}
+
+.card > img {
+  padding: 1rem;
+  object-fit: contain;
+  background: var(--orange);
+  border-radius: 10px;
+  height: 2rem;
+  width: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.card > h3 {
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.75rem;
+}
+
+.card > p {
+  color: var(--p-gray);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+footer {
+  color: var(--p-gray);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 7.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+
+footer > span {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .grey-spot-1 , .grey-spot-2{
+    display: none;
+  }
+  .container {
+    padding: 2.5rem;
+  }
+  .hero-section-info-text > h1 {
+    font-size: 3rem;
+line-height: 3rem;
+  }
+  .hero-section-info-text > p {
+    font-size: 1rem;
+line-height: 1.625rem;
+  }
+  .hero-section-img-1 {
+    position: absolute;
+    height: 25rem;
+    width:25%;
+    right:0%;
+    border-radius: 30px 0 0 30px;
+  }
+  .hero-section-top {
+    grid-template-columns: 1fr 0.3fr;
+  }
+  .hero-section-bot {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 25rem 10rem;
+  }
+
+  .hero-section-info-2{
+    grid-column: 1 / span 3;
+  }
+  .hero-section-info-2-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    gap: 2rem;
+    align-items: center;
+  }
+  .cards-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-section-img-1 {
+    height: 25rem;
+    width: 105%;
+    border-radius: 30px 0 0 30px;
+    position: relative;
+  }
+
+  .hero-section-top {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    max-width: 100%;
+  }
+  .hero-section-bot {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 25rem 15rem;
+    row-gap: 3rem;
+  }
+  .container{
+    padding: 5%;
+  }
+  .hero-section-button > button , .top-section > a > button{
+    padding: 0.65rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+  .hero-section-info-2-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0;
+  }
+  .hero-section-img-2 , .hero-section-img-2 > .orange-bg {
+    border-radius: 0px 30px 30px 0px;
+  }
+  
+  .hero-section-img-2 {
+    transform: translateX(-2rem);
+  }
+  
+  
+  .hero-section-img-3 {
+    transform: translateX(-2rem);
+    width: 130%;
+  }
+
+  .cards-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 2.5rem;
+    padding: 3rem 0 0 0;
+  }
+
+  .card {
+    align-items: center;
+    text-align: center;
+  }
+
+  footer {
+     padding-bottom: 2rem;
+  }
+ 
+}
