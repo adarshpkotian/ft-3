@@ -68,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width:80%;
+  max-width:75%;
 }
 
 .hero-section-info-text > h1 {
